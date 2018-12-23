@@ -10,9 +10,11 @@ fun main(args: Array<String>) {
             val shanKingdom = southeros.getKingdomByRulerName("Shan")
             val receiverKingdom = southeros.getKingdomByName(kingdomName)
             shanKingdom.sendMessage(Message(shanKingdom, receiverKingdom, message))
+
         } catch (exception: IndexOutOfBoundsException) {
             println("Please enter input properly suggested format:kingdomName,encrypted message")
             continue@loop
+
         } catch (exception: KingdomNotFoundException) {
             println("${exception.message}")
             continue@loop
@@ -34,7 +36,7 @@ private fun printRulerDetailsOf(southeros: Southeros) {
 
     println("Allies of Ruler?")
     if (rulerKingdom != null) {
-        rulerKingdom.allies.forEach { print(it.name + " ") }
+        rulerKingdom.allies.forEach { print(it.name + ",") }
     } else {
         println("None")
     }
