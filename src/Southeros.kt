@@ -11,13 +11,21 @@ class Southeros {
     }
 
     fun getKingdomByName(name: String) =
-            kingdomsList.first { kingdom ->
-                kingdom.name == name
+            try {
+                kingdomsList.first { kingdom ->
+                    kingdom.name.toLowerCase() == name.toLowerCase()
+                }
+            } catch (exception: NoSuchElementException) {
+                throw KingdomNotFoundException("No kingdom with name:$name")
             }
 
     fun getKingdomByRulerName(rulerName: String) =
-            kingdomsList.first { kingdom ->
-                kingdom.rulerName == rulerName
+            try {
+                kingdomsList.first { kingdom ->
+                    kingdom.rulerName.toLowerCase() == rulerName.toLowerCase()
+                }
+            } catch (exception: NoSuchElementException) {
+                throw KingdomNotFoundException("No kingdom has rulerName:$rulerName")
             }
 
     fun getRulerKingdom(): Kingdom? {
