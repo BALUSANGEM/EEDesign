@@ -9,4 +9,14 @@ class Southeros {
                 Kingdom("Fire", "Dragon")
         )
     }
+
+    fun getKingdomByName(name: String) =
+            kingdomsList.first { kingdom ->
+                kingdom.name == name
+            }
+
+    fun getKingdomByRulerName(rulerName: String) =
+            kingdomsList.first { kingdom ->
+                kingdom.rulerName == rulerName
+            }
 }
