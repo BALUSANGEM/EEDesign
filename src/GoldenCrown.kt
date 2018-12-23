@@ -13,8 +13,9 @@ fun main(args: Array<String>) {
         } catch (exception: IndexOutOfBoundsException) {
             println("Please enter input properly suggested format:kingdomName,encrypted message")
             continue@loop
-        } catch (exception: NoSuchElementException) {
+        } catch (exception: KingdomNotFoundException) {
             println("${exception.message}")
+            continue@loop
         }
 
         if (southeros.hasRuler()) {
