@@ -19,4 +19,15 @@ class Southeros {
             kingdomsList.first { kingdom ->
                 kingdom.rulerName == rulerName
             }
+
+    fun getRulerKingdom(): Kingdom? {
+        kingdomsList.forEach { kingdom ->
+            if (kingdom.allies.size >= 3) {
+                return kingdom
+            }
+        }
+        return null
+    }
+
+    fun hasRuler() = getRulerKingdom() != null
 }
