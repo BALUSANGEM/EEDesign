@@ -1,3 +1,8 @@
+import common.KingdomNotFoundException
+import common.Message
+import common.Southeros
+import firstproblem.FirstProblemRulerDecider
+
 fun main(args: Array<String>) {
     val southeros = Southeros()
 
@@ -32,7 +37,7 @@ fun main(args: Array<String>) {
 private fun printRulerDetailsOf(southeros: Southeros) {
     val rulerKingdom = southeros.getRulerKingdom(FirstProblemRulerDecider())
 
-    println("Who is the ruler of Southeros?")
+    println("Who is the ruler of common.Southeros?")
     println(rulerKingdom?.rulerName ?: "None")
 
     println("Allies of Ruler?")

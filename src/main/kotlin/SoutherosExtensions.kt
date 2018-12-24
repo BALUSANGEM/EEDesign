@@ -1,7 +1,6 @@
-package secondproblem
-
 import common.KingdomNotFoundException
 import common.Southeros
+import secondproblem.SecondProblemRulerDecider
 
 fun Southeros.kingdomsExistInSoutheros(kingdomNamesList: List<String>) =
         try {

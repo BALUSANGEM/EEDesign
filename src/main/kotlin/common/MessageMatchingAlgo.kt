@@ -1,4 +1,4 @@
-import common.AllyStrategy
+package common
 
 class MessageMatchingAlgo(private val message: String, private val emblem: String) : AllyStrategy {
 

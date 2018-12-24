@@ -1,3 +1,7 @@
+package common
+
+import Kingdom
+
 open class Southeros {
     val kingdomsList by lazy {
         listOf(

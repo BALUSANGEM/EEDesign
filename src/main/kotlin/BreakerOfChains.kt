@@ -1,3 +1,6 @@
+import common.Southeros
+import secondproblem.*
+
 fun main(args: Array<String>) {
     val southeros = Southeros()
     val heightPriest = HighPriest()

@@ -1,3 +1,5 @@
+package secondproblem
+
 import common.Message
 
 class Ballot : IBallot {

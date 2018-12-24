@@ -1,7 +1,7 @@
-package common
-
 import secondproblem.IBallot
-import MessagesTable
+import common.AllyDecider
+import common.Message
+import common.MessageMatchingAlgo
 
 class Kingdom(val name: String, val emblem: String, val rulerName: String = "") {
 

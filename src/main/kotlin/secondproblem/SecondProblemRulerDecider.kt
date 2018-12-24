@@ -1,4 +1,6 @@
-import common.Kingdom
+package secondproblem
+
+import Kingdom
 import common.RulerSelectorStrategy
 
 class SecondProblemRulerDecider : RulerSelectorStrategy {

@@ -1,4 +1,6 @@
-import common.Kingdom
+package secondproblem
+
+import Kingdom
 
 fun List<Kingdom>.getKingdomsHavingMaximumAllies(): List<Kingdom> {
     val listOfKingdomsWithMaxAllies = ArrayList<Kingdom>()
