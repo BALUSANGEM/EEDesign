@@ -1,4 +1,4 @@
-fun SoutherosCompat.kingdomsExistInSoutheros(kingdomNamesList: List<String>) =
+fun Southeros.kingdomsExistInSoutheros(kingdomNamesList: List<String>) =
         try {
             kingdomNamesList.all { kingdomName ->
                 val kingdom = getKingdomByName(kingdomName)
@@ -8,8 +8,8 @@ fun SoutherosCompat.kingdomsExistInSoutheros(kingdomNamesList: List<String>) =
             false
         }
 
-fun SoutherosCompat.printRulerDetails() {
-    val rulerKingdom = getRulerKingdom()
+fun Southeros.printRulerDetails() {
+    val rulerKingdom = getRulerKingdom(SecondProblemRulerDecider())
 
     println("Who is the ruler of Southeros?")
     println(rulerKingdom?.name ?: "None")
