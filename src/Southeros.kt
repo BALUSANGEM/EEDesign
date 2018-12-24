@@ -28,14 +28,8 @@ open class Southeros {
                 throw KingdomNotFoundException("No kingdom has rulerName:$rulerName")
             }
 
-    open fun getRulerKingdom(): Kingdom? {
-        kingdomsList.forEach { kingdom ->
-            if (kingdom.allies.size >= 3) {
-                return kingdom
-            }
-        }
-        return null
-    }
+    fun getRulerKingdom(rulerSelectorStrategy: RulerSelectorStrategy): Kingdom? =
+            rulerSelectorStrategy.getRulerKingdom(kingdomsList)
 
-    fun hasRuler() = getRulerKingdom() != null
+    fun hasRuler(rulerSelectorStrategy: RulerSelectorStrategy) = getRulerKingdom(rulerSelectorStrategy) != null
 }
