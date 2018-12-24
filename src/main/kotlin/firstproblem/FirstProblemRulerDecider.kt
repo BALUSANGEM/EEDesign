@@ -1,3 +1,6 @@
+import common.Kingdom
+import common.RulerSelectorStrategy
+
 class FirstProblemRulerDecider : RulerSelectorStrategy {
     override fun getRulerKingdom(kingdomsList: List<Kingdom>): Kingdom? {
         kingdomsList.forEach { kingdom ->

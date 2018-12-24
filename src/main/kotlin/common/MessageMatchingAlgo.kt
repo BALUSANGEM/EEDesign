@@ -1,3 +1,5 @@
+import common.AllyStrategy
+
 class MessageMatchingAlgo(private val message: String, private val emblem: String) : AllyStrategy {
 
     override fun isAlly() = isMessageMatchingWithEmblem(message, emblem)

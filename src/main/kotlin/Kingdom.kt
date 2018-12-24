@@ -1,3 +1,8 @@
+package common
+
+import secondproblem.IBallot
+import MessagesTable
+
 class Kingdom(val name: String, val emblem: String, val rulerName: String = "") {
 
     var isCompetingToBeRuler = false

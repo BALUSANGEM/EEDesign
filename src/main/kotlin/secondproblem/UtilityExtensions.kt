@@ -1,3 +1,5 @@
+import common.Kingdom
+
 fun List<Kingdom>.getKingdomsHavingMaximumAllies(): List<Kingdom> {
     val listOfKingdomsWithMaxAllies = ArrayList<Kingdom>()
     var maxAllies = 0

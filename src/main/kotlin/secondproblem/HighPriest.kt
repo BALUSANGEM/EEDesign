@@ -1,3 +1,4 @@
+import common.Message
 import java.util.*
 
 class HighPriest {
