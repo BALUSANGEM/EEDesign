@@ -1,6 +1,8 @@
-class MessageMatchingAlgo {
+class MessageMatchingAlgo(private val message: String, private val emblem: String) : AllyStrategy {
 
-    fun isMessageMatchingWithEmblem(message: String, emblem: String): Boolean {
+    override fun isAlly() = isMessageMatchingWithEmblem(message, emblem)
+
+    private fun isMessageMatchingWithEmblem(message: String, emblem: String): Boolean {
 
         val messageUnqueCharacterCounter = getUniqueCharactersAndItsCountAsHashMap(message)
         val emblemUnqueCharacterCounter = getUniqueCharactersAndItsCountAsHashMap(emblem)
