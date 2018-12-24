@@ -1,4 +1,4 @@
-class Southeros {
+open class Southeros {
     val kingdomsList by lazy {
         listOf(
                 Kingdom("Space", "Gorilla", "Shan"),
@@ -28,7 +28,7 @@ class Southeros {
                 throw KingdomNotFoundException("No kingdom has rulerName:$rulerName")
             }
 
-    fun getRulerKingdom(): Kingdom? {
+    open fun getRulerKingdom(): Kingdom? {
         kingdomsList.forEach { kingdom ->
             if (kingdom.allies.size >= 3) {
                 return kingdom
