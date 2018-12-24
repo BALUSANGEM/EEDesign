@@ -1,5 +1,6 @@
 fun main(args: Array<String>) {
     val southeros = Southeros()
+
     printRulerDetailsOf(southeros)
     loop@ while (true) {
 
@@ -20,7 +21,7 @@ fun main(args: Array<String>) {
             continue@loop
         }
 
-        if (southeros.hasRuler()) {
+        if (southeros.hasRuler(FirstProblemRulerDecider())) {
             printRulerDetailsOf(southeros)
             break@loop
         }
@@ -29,7 +30,7 @@ fun main(args: Array<String>) {
 }
 
 private fun printRulerDetailsOf(southeros: Southeros) {
-    val rulerKingdom = southeros.getRulerKingdom()
+    val rulerKingdom = southeros.getRulerKingdom(FirstProblemRulerDecider())
 
     println("Who is the ruler of Southeros?")
     println(rulerKingdom?.rulerName ?: "None")
