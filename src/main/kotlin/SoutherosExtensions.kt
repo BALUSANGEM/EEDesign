@@ -4,9 +4,13 @@ import secondproblem.SecondProblemRulerDecider
 
 fun Southeros.kingdomsExistInSoutheros(kingdomNamesList: List<String>) =
         try {
-            kingdomNamesList.all { kingdomName ->
-                val kingdom = getKingdomByName(kingdomName)
-                kingdomsList.contains(kingdom)
+            if (kingdomNamesList.isEmpty()){
+                false
+            }else {
+                kingdomNamesList.all { kingdomName ->
+                    val kingdom = getKingdomByName(kingdomName)
+                    kingdomsList.contains(kingdom)
+                }
             }
         } catch (exception: KingdomNotFoundException) {
             false
