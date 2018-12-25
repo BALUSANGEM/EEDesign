@@ -1,6 +1,6 @@
 import common.KingdomNotFoundException
 import common.Southeros
-import secondproblem.SecondProblemRulerDecider
+import breakerofchains.SecondProblemRulerDecider
 
 fun Southeros.kingdomsExistInSoutheros(kingdomNamesList: List<String>) =
         try {

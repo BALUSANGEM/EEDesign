@@ -1,4 +1,4 @@
-package firstproblem
+package goldencrown
 
 import org.junit.Assert
 import org.junit.Test

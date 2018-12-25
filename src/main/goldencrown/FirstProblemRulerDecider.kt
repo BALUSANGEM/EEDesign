@@ -1,4 +1,4 @@
-package firstproblem
+package goldencrown
 
 import Kingdom
 import common.RulerSelectorStrategy

@@ -1,7 +1,7 @@
 import common.KingdomNotFoundException
 import common.Message
 import common.Southeros
-import firstproblem.FirstProblemRulerDecider
+import goldencrown.FirstProblemRulerDecider
 
 fun main(args: Array<String>) {
     val southeros = Southeros()

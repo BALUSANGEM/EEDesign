@@ -1,5 +1,5 @@
 import common.Southeros
-import secondproblem.*
+import breakerofchains.*
 
 fun main(args: Array<String>) {
     val southeros = Southeros()

@@ -1,6 +1,6 @@
 package common
 
-import firstproblem.FirstProblemRulerDecider
+import goldencrown.FirstProblemRulerDecider
 import org.junit.Assert
 import org.junit.Test
 import Kingdom

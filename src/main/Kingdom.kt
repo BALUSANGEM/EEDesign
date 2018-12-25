@@ -1,4 +1,4 @@
-import secondproblem.IBallot
+import breakerofchains.IBallot
 import common.AllyDecider
 import common.Message
 import common.MessageMatchingAlgo
