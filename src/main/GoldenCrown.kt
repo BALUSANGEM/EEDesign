@@ -37,7 +37,7 @@ fun main(args: Array<String>) {
 private fun printRulerDetailsOf(southeros: Southeros) {
     val rulerKingdom = southeros.getRulerKingdom(FirstProblemRulerDecider())
 
-    println("Who is the ruler of common.Southeros?")
+    println("Who is the ruler of Southeros?")
     println(rulerKingdom?.rulerName ?: "None")
 
     println("Allies of Ruler?")

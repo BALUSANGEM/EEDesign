@@ -19,7 +19,7 @@ fun Southeros.kingdomsExistInSoutheros(kingdomNamesList: List<String>) =
 fun Southeros.printRulerDetails() {
     val rulerKingdom = getRulerKingdom(SecondProblemRulerDecider())
 
-    println("Who is the ruler of common.Southeros?")
+    println("Who is the ruler of Southeros?")
     println(rulerKingdom?.name ?: "None")
     println("Allies of Ruler?")
     if (rulerKingdom == null) {
