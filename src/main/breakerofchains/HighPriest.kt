@@ -19,6 +19,7 @@ class HighPriest {
                 break
             }
         }
+        ballot.messages.clear()
 
     }
 
