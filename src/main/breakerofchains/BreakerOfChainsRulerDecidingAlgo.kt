@@ -1,9 +1,9 @@
 package breakerofchains
 
 import Kingdom
-import common.RulerSelectorStrategy
+import common.RulerSelectionStrategy
 
-class SecondProblemRulerDecider : RulerSelectorStrategy {
+class BreakerOfChainsRulerDecidingAlgo : RulerSelectionStrategy {
     override fun getRulerKingdom(kingdomsList: List<Kingdom>): Kingdom? {
         val listOfKingdomsWithMaxAllies = kingdomsList.getKingdomsHavingMaximumAllies()
         return if (listOfKingdomsWithMaxAllies.size == 1) {

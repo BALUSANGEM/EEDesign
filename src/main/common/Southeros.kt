@@ -32,8 +32,8 @@ open class Southeros {
                 throw KingdomNotFoundException("No kingdom has rulerName:$rulerName")
             }
 
-    fun getRulerKingdom(rulerSelectorStrategy: RulerSelectorStrategy): Kingdom? =
-            rulerSelectorStrategy.getRulerKingdom(kingdomsList)
+    fun getRulerKingdom(rulerSelectionStrategy: RulerSelectionStrategy): Kingdom? =
+            rulerSelectionStrategy.getRulerKingdom(kingdomsList)
 
-    fun hasRuler(rulerSelectorStrategy: RulerSelectorStrategy) = getRulerKingdom(rulerSelectorStrategy) != null
+    fun hasRuler(rulerSelectionStrategy: RulerSelectionStrategy) = getRulerKingdom(rulerSelectionStrategy) != null
 }

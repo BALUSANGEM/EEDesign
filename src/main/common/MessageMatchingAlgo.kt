@@ -6,15 +6,15 @@ class MessageMatchingAlgo(private val message: String, private val emblem: Strin
 
     private fun isMessageMatchingWithEmblem(message: String, emblem: String): Boolean {
 
-        val messageUnqueCharacterCounter = getUniqueCharactersAndItsCountAsHashMap(message)
-        val emblemUnqueCharacterCounter = getUniqueCharactersAndItsCountAsHashMap(emblem)
+        val messageUniqueCharacterCounter = getUniqueCharactersAndItsCountAsHashMap(message)
+        val emblemUniqueCharacterCounter = getUniqueCharactersAndItsCountAsHashMap(emblem)
 
-        return emblemUnqueCharacterCounter.all {
+        return emblemUniqueCharacterCounter.all {
             val character = it.key
             val countInEmblem = it.value
 
-            if (messageUnqueCharacterCounter.containsKey(character)) {
-                val countInMessage = messageUnqueCharacterCounter[character]!!
+            if (messageUniqueCharacterCounter.containsKey(character)) {
+                val countInMessage = messageUniqueCharacterCounter[character]!!
                 countInMessage >= countInEmblem
             } else {
                 false

@@ -1,6 +1,6 @@
 import common.KingdomNotFoundException
 import common.Southeros
-import breakerofchains.SecondProblemRulerDecider
+import breakerofchains.BreakerOfChainsRulerDecidingAlgo
 
 fun Southeros.kingdomsExistInSoutheros(kingdomNamesList: List<String>) =
         try {
@@ -17,7 +17,7 @@ fun Southeros.kingdomsExistInSoutheros(kingdomNamesList: List<String>) =
         }
 
 fun Southeros.printRulerDetails() {
-    val rulerKingdom = getRulerKingdom(SecondProblemRulerDecider())
+    val rulerKingdom = getRulerKingdom(BreakerOfChainsRulerDecidingAlgo())
 
     println("Who is the ruler of Southeros?")
     println(rulerKingdom?.name ?: "None")

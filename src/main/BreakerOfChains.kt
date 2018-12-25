@@ -46,7 +46,7 @@ fun main(args: Array<String>) {
             printAlliesSizeOfCompetingKingdoms(kingdom)
         }
 
-        if (southeros.hasRuler(SecondProblemRulerDecider())) {
+        if (southeros.hasRuler(BreakerOfChainsRulerDecidingAlgo())) {
             southeros.printRulerDetails()
             break@loop
         } else {

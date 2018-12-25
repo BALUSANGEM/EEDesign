@@ -2,6 +2,6 @@ package common
 
 import Kingdom
 
-interface RulerSelectorStrategy {
+interface RulerSelectionStrategy {
     fun getRulerKingdom(kingdomsList: List<Kingdom>): Kingdom?
 }

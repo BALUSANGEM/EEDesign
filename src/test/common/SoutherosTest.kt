@@ -1,6 +1,6 @@
 package common
 
-import goldencrown.FirstProblemRulerDecider
+import goldencrown.GoldenCrownRulerDecidingAlgo
 import org.junit.Assert
 import org.junit.Test
 import Kingdom
@@ -42,7 +42,7 @@ class SoutherosTest {
         val southeros = Southeros()
         val firstKingdom = southeros.kingdomsList[0]
         firstKingdom.allies.add(Kingdom("name1", "emblem", "ruler"))
-        val rulerKingdom = southeros.getRulerKingdom(FirstProblemRulerDecider())
+        val rulerKingdom = southeros.getRulerKingdom(GoldenCrownRulerDecidingAlgo())
         Assert.assertEquals(null, rulerKingdom)
     }
 
@@ -53,7 +53,7 @@ class SoutherosTest {
         firstKingdom.allies.add(Kingdom("name1", "emblem", "ruler"))
         firstKingdom.allies.add(Kingdom("name2", "emblem", "ruler"))
         firstKingdom.allies.add(Kingdom("name3", "emblem", "ruler"))
-        val rulerKingdom = southeros.getRulerKingdom(FirstProblemRulerDecider())
+        val rulerKingdom = southeros.getRulerKingdom(GoldenCrownRulerDecidingAlgo())
         Assert.assertEquals(firstKingdom, rulerKingdom)
     }
 

@@ -4,10 +4,10 @@ import org.junit.Assert
 import org.junit.Test
 import Kingdom
 
-class FirstProblemRulerDeciderTest {
+class GoldenCrownRulerDecidingAlgoTest {
     @Test
     fun whenGivenThisInputListItShouldReturnNull() {
-        val firstProblemRulerDecider = FirstProblemRulerDecider()
+        val firstProblemRulerDecider = GoldenCrownRulerDecidingAlgo()
         val listOfKingdom = listOf(
                 Kingdom("first", "emblem1", "ruler1"),
                 Kingdom("second", "emblem2", "ruler2"),
@@ -20,7 +20,7 @@ class FirstProblemRulerDeciderTest {
 
     @Test
     fun whenGivenThisInputListItShouldReturnExpectedOutput() {
-        val firstProblemRulerDecider = FirstProblemRulerDecider()
+        val firstProblemRulerDecider = GoldenCrownRulerDecidingAlgo()
         val listOfKingdom = listOf(
                 Kingdom("first", "emblem1", "ruler1"),
                 Kingdom("second", "emblem2", "ruler2"),

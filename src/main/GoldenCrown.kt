@@ -1,7 +1,7 @@
 import common.KingdomNotFoundException
 import common.Message
 import common.Southeros
-import goldencrown.FirstProblemRulerDecider
+import goldencrown.GoldenCrownRulerDecidingAlgo
 
 fun main(args: Array<String>) {
     val southeros = Southeros()
@@ -26,7 +26,7 @@ fun main(args: Array<String>) {
             continue@loop
         }
 
-        if (southeros.hasRuler(FirstProblemRulerDecider())) {
+        if (southeros.hasRuler(GoldenCrownRulerDecidingAlgo())) {
             printRulerDetailsOf(southeros)
             break@loop
         }
@@ -35,7 +35,7 @@ fun main(args: Array<String>) {
 }
 
 private fun printRulerDetailsOf(southeros: Southeros) {
-    val rulerKingdom = southeros.getRulerKingdom(FirstProblemRulerDecider())
+    val rulerKingdom = southeros.getRulerKingdom(GoldenCrownRulerDecidingAlgo())
 
     println("Who is the ruler of Southeros?")
     println(rulerKingdom?.rulerName ?: "None")
