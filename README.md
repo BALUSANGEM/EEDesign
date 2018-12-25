@@ -13,4 +13,4 @@ This repo contains solutions to the two problems? 1.Golden Crown, 2.Breaker Of C
   * gradle
 
 > Note: 
-   * two solutions are available in single repo because they have common files, that means Breaker of Chains problem is extension of Golden Crown problem. 
+   * Breaker of Chains problem is extension of Golden Crown problem, becaues of that solutions for two problems is in single repo
